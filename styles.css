@@ -1,53 +1,80 @@
-/* styles.css */
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
-  line-height: 1.6;
+:root {
+  --primary: #1f2937;
+  --accent: #3b82f6;
+  --text: #111827;
+  --bg: #f9fafb;
+  --font: 'Roboto', sans-serif;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
 header {
-  background: #1f2937;
+  background: var(--primary);
   color: white;
   padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin-left: 1rem;
+  margin-left: 2rem;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.hero, .form-section {
-  padding: 4rem 2rem;
+nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
   text-align: center;
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(135deg, #f0f4ff, #e5e7eb);
+  border-radius: 0 0 40px 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
-form input, form textarea {
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
-  margin: 8px auto;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
 }
 
-button {
-  background-color: #1f2937;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #4b5563;
 }
 
-button:hover {
-  background-color: #111827;
+footer {
+  background: #f3f4f6;
+  color: #6b7280;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 6rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #e5e7eb;
 }

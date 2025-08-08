@@ -1,18 +1,18 @@
-<!-- services.html -->
+<!-- services.html (Squarespace-style) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services | MotiCalGas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services — MotiCalGas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="logo">MotiCalGas</div>
-      <nav class="main-nav">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MotiCalGas</a>
+      <nav class="nav">
         <a href="index.html">Home</a>
         <a href="services.html" class="active">Services</a>
         <a href="about.html">About</a>
@@ -21,48 +21,61 @@
     </div>
   </header>
 
-  <section class="hero industrial">
-    <div class="container">
-      <h1>Our Professional Services</h1>
-      <p>Comprehensive calibration and training services designed to keep your operations compliant and safe.</p>
-    </div>
-  </section>
-
-  <section class="solutions">
-    <div class="container">
-      <div class="solution-grid">
-        <div class="solution">
-          <h3>Custom Gas Blending</h3>
-          <p>Tailored mixtures with NIST-traceable certificates delivered anywhere in Canada.</p>
-        </div>
-        <div class="solution">
-          <h3>Field Calibrations</h3>
-          <p>On-site service to calibrate detectors and analyzers on the spot.</p>
-        </div>
-        <div class="solution">
-          <h3>Lab Calibrations</h3>
-          <p>Precision in-house calibrations performed in our controlled environment for maximum accuracy.</p>
-        </div>
-        <div class="solution">
-          <h3>Training Workshops</h3>
-          <p>Hands-on sessions covering sensor use, maintenance best practices, and safety protocols.</p>
-        </div>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Our Services</h1>
+        <p class="lead">Accurate, documented, and customizable calibration support—delivered on-site or in-house.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="cta-bar">
-    <div class="container">
-      <h2>Ready to Schedule?</h2>
-      <a href="contact.html" class="btn-secondary">Get Started</a>
-    </div>
-  </section>
+    <section class="cards">
+      <div class="container card-grid">
+        <article class="card">
+          <div class="pill">Blending</div>
+          <h3>Custom Gas Blending</h3>
+          <p>Gravimetric blends with signed documentation. Common carriers include N₂, air, and specialty gases. Cylinders labeled for audit readiness.</p>
+        </article>
+        <article class="card">
+          <div class="pill">Field</div>
+          <h3>On‑Site Calibration</h3>
+          <p>Mobile technicians calibrate multi‑gas detectors, fixed heads, and analyzers. Rapid scheduling and minimal downtime.</p>
+        </article>
+        <article class="card">
+          <div class="pill">Lab</div>
+          <h3>In‑House Calibration</h3>
+          <p>Controlled environment calibrations for high‑accuracy requirements with full documentation.</p>
+        </article>
+        <article class="card">
+          <div class="pill">Training</div>
+          <h3>Training & Consultation</h3>
+          <p>Workshops covering sensor drift, cross‑sensitivities, bump tests, and record‑keeping for audits.</p>
+        </article>
+      </div>
+    </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 MotiCalGas. All rights reserved.</p>
+    <section class="cta-wide split-cta">
+      <div class="container cta-inner split">
+        <div class="split-copy">
+          <h2>Need something specific?</h2>
+          <p>Tell us the mix, balance gas, concentrations, and cylinder size—our team will confirm specs and timeline.</p>
+          <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+        </div>
+        <div class="split-media" aria-hidden="true"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="brand">MotiCalGas</div>
+      <div class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-note">© 2025 MotiCalGas. All rights reserved.</div>
     </div>
   </footer>
 </body>
 </html>
-
